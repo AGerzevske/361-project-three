@@ -1,0 +1,382 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+/* stylelint-disable */
+/* Keep reset CSS to one minified line */
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html,.reset{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+/* stylelint-enable */
+
+/* ======================================================== */
+/* This pattern is downloaded from www.subtlepatterns.com   */
+/* If you need more, that's where to get'em.                */
+/* ======================================================== */
+
+/* End of not mine */
+/* Comments and Notes */
+
+/*  */
+
+/* Base Styles (element selectors; color, typography, and that's it)*/
+/* Layout (id selectors; width/height, position, flexbox, grid) */
+/* Module/Modular Section (class or descedent selectors; repeating specific styles) */
+/* State (repeat the structure above; media queries, JavaScript-dependent styles) */
+
+/* Base Styles */
+/* Layout */
+/* Module Section */
+/* State */
+
+/* Maths */
+/*      font-size      *//*         line-height        *//* elmt */
+/* 12.006 / 18 = 0.667 *//* 22  / 12.006 = 1.376145261 *//*  sm  */
+/* 18.000 / 16 = 1.125 *//* 22  / 18.000 = 1.222222222 *//* html */
+/* 22.78125 / 18 = 1.265625 *//* 33  / 22.78125 = 1.448559670 *//* midl */
+/* 27.000 / 18 = 1.500 *//* 44  / 27.000 = 1.629629629 *//*  h4  */
+/* 40.500 / 18 = 2.250 *//* 66  / 40.500 = 1.629629629 *//*  h3  */
+/* 60.750 / 18 = 3.375 *//* 88  / 60.750 = 1.448559671 *//*  h2  */
+/* 91.134 / 18 = 5.063 *//* 110 / 91.134 = 1.204291658 *//*  h1  */
+/* 1.222222222 / 2 = 0.611111111 */
+/* 1.222222222 / 4 = 0.305555555 */
+/* 1.629629629 / 2 = 0.814814815 */
+
+/* top | right | bottom | left */
+/* vertical | horizontal */
+
+/* Custom Site Styles */
+/* Base Styles (element selectors; color, typography, and that's it) */
+html {
+  /* background-image: url(/assets/img/baseline.png); */
+  background-image: url(/assets/img/escheresque_ste.png);
+  color: #222;
+  font-family: Roboto, "Bai Jamjuree", Calibri, Helvetica, sans-serif;
+  font-size: 1.125em; /* 18.000 / 16 = 1.125 */
+  font-weight: 400;
+  line-height: 1.222222222em; /* 22  / 18.000 = 1.222222222 */
+  overflow-wrap: break-word;
+  padding: 1.222222222em; /* 22  / 18.000 = 1.222222222 */
+}
+
+header {
+  background-color: #A43A3D;
+  border-radius: 0.611111111em 0.611111111em 0 0; /* 1.222222222 / 2 = 0.611111111 */
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  overflow-wrap: break-word;
+
+}
+
+main {
+  background-color: #DDD;
+  border-radius: 0 0 0.611111111em 0.611111111em; /* 1.222222222 / 2 = 0.611111111 */
+  padding: 0 1.222222222em; /* 22  / 18.000 = 1.222222222 */
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Bai Jamjuree", Roboto, Calibri, Helvetica, sans-serif;
+  font-weight: 500;
+}
+
+h1,
+h2,
+h3 {
+  font-size: 2.25em;  /* 40.500 / 18 = 2.250 */
+  line-height: 1.629629629em; /* 66  / 40.500 = 1.629629629 */
+}
+
+h1 {
+  order: 1;
+  padding: 0 0.444444444em; /* 18 / 40.500 = 0.444444444 */
+  width: 100%;
+}
+
+h3 {
+  text-decoration: underline;
+}
+
+h4 {
+  font-size: 1.5em;   /* 27.000 / 18 = 1.500 */
+  line-height: 1.62962963em;  /* 44  / 27.000 = 1.62962963 */
+}
+
+small {
+  font-size: 0.667em; /* 12.006 / 18 = 0.667 */
+  line-height: 1.376145261em; /* 22  / 12.006 = 1.376145261 */
+}
+
+p {
+  padding-bottom: 1.222222222em; /* 22  / 18.000 = 1.222222222 */
+}
+
+audio,
+img,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+ol,
+ul,
+li {
+  padding-bottom: 0.611111111em; /* 1.222222222 / 2 = 0.611111111 */
+}
+
+figcaption {
+  background-color: #222;
+  color: #EEE;
+  padding: 0.166666667em; /* 3 / 18 = 0.166666667 */
+  text-align: center;
+}
+
+/* Layout (id selectors; width/height, position, flexbox, grid) */
+
+#nav-page { /* header #nav-page */
+  background-color: #A43A3D;
+  flex: 1 0 auto;
+  font-size: 1.125em; /* 18.000 / 16 = 1.125 */
+  font-weight: 400;
+  line-height: 1.222222222em; /* 22  / 18.000 = 1.222222222 */
+  order: 4;
+  padding: 0.611111111em 1em; /* 18 = 1em */
+  width: 50%;
+}
+
+#resume-address {
+  background-color: #A43A3D;
+  flex: 1 0 auto;
+  font-size: 1.125em; /* 18.000 / 16 = 1.125 */
+  font-weight: 400;
+  line-height: 1.222222222em; /* 22  / 18.000 = 1.222222222 */
+  order: 3;
+  padding: 0.611111111em 1em; /* 18 = 1em */
+  width: 50%;
+}
+
+/* Module/Modular Section (class or descedent selectors; repeating specific styles) */
+
+li ol,
+li ul {
+  padding-left: 1.222222222em; /* 22  / 18.000 = 1.222222222 */
+}
+
+.nav-site { /* header .nav-site*/
+  flex: 1 0 auto;
+  order: 2;
+  width: 100%;
+}
+
+.nav-menu {
+  background-color: #348630;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: flex-start;
+  min-height: 0;
+  min-width: 0;
+  overflow: hidden;
+  padding: 0;
+}
+
+.nav-item { /* nav-menu li */
+  padding: 0;
+  text-align: center;
+}
+
+.nav-item a {
+  border-radius: 0.55em; /* Just looks good */
+  color: #222;
+  display: inherit;
+  font-family: "Bai Jamjuree", Roboto, Calibri, Helvetica, sans-serif;
+  font-size: 1.5em; /* 27.000 / 18 = 1.500 */
+  font-weight: 400;
+  line-height: 1.629629629em; /* 44  / 27.000 = 1.629629629 */
+  padding: 0 0.666666666em; /* 18 / 27 = 0.666666666 */
+  text-align: center;
+  text-decoration: underline;
+}
+
+.nav-page-item {
+  padding: 0;
+}
+
+.nav-page-item a {
+  color: #222;
+  overflow-wrap: break-word;
+  text-decoration: underline;
+}
+
+.nav-page-item a:hover {
+  color: blue;
+}
+
+.nav-item a:hover {
+  background-color: #33cc33;
+}
+
+.nav-item a:active {
+  background-color: #70db70;
+}
+
+.employer {
+  font-family: "Bai Jamjuree", Roboto, Calibri, Helvetica, sans-serif;
+}
+
+.job-achievements {
+  list-style-type: circle;
+}
+
+.degrees {
+  font-weight: 600;
+}
+
+.images {
+  background: #222;
+  overflow: auto;
+  padding: 0.277777778em; /* 5 / 18 = 0.277777778 */
+}
+
+.images li {
+  border-radius: 0.611111111em;
+  box-sizing: border-box;
+  padding: 0.277777778em; /* 5 / 18 = 0.277777778 */
+}
+
+
+#resume-address-menu,
+#resume-address-menu li {
+  padding: 0;
+}
+
+#linkedin a {
+  color: #222;
+  text-decoration: underline;
+}
+
+#linkedin a:hover {
+  color: blue;
+}
+
+/* State (repeat the structure above; media queries, JavaScript-dependent styles) */
+
+/* Change from collum to row when there is room, also happens when name goes from 2 ot 1 line */
+@media screen and (min-width: 398px) {
+  /* Base Styles */
+  /* Layout */
+  /* Module Section */
+  .nav-menu {
+    flex-flow: row wrap;
+  }
+
+  /* State */
+}
+
+/* Change when name/h1/h2 can fit larger size on 1 line to reflect perfect 1/5th style */
+/* Move to flex style for images */
+@media screen and (min-width: 582px) {
+  /* Base Styles */
+  h1 {
+    padding: 0 0.296296296em; /* 18 / 60.750 = 0.296296296 */
+  }
+
+  h1,
+  h2 {
+    font-size: 3.375em; /* 60.750 / 18 = 3.375 */
+    line-height: 1.448559671em; /* 88  / 60.750 = 1.448559671 */
+    overflow-wrap: normal;
+  }
+
+  figcaption {
+    clear: both;
+  }
+
+  /* Layout */
+  #nav-page {
+    width: 42.6116838%;
+    /* So it moves over at the right time, need to change flex, or move to grid to resolve */
+  }
+
+  #resume-address {
+    width: 42.6116838%;
+    /* So it moves over at the right time, need to change flex, or move to grid to resolve */
+  }
+
+  /* Module Section */
+  .images {
+    display: flex;
+    flex-flow: row wrap-reverse;
+  }
+
+  .images li {
+    flex: 1 0 auto;
+    width: 50%;
+  }
+
+  /* State */
+}
+
+/* Keep text on homepage readable */
+@media screen and (min-width: 672px) {
+  /* Base Styles */
+  /* Layout */
+  #homepage {
+    padding: 1.222222222em 20%; /* 22  / 18.000 = 1.222222222 */
+  }
+
+  /* Module Section */
+  /* State */
+}
+
+/* Change when name/h1 can fit larger size on 1 line to reflect perfect 1/5th style */
+@media screen and (min-width: 840px) {
+  /* Base Styles */
+  h1 {
+    font-size: 5.063em; /* 91.134 / 18 = 5.063 */
+    line-height: 1.204291658em; /* 110 / 91.134 = 1.204291658 */
+    padding: 0 0.197511356em; /* 18 / 91.134 = 0.197511356 */
+  }
+
+  /* Layout */
+  /* Module Section */
+  /* State */
+}
+
+/* Stop text from growing to large to manage */
+/* I may revisit this in the future to allow it to grow more */
+/* Start managing resume text */
+@media screen and (min-width: 1072px) {
+  /* Base Styles */
+  html {
+    width: 57.111111111em; /* (1072 - 44) / 18 = 57.111111111*/
+  }
+
+  /* Layout */
+  #schools,
+  #jobs {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  #sd129,
+  #best-buy,
+  #ync,
+  #main-event,
+  #iit,
+  #cod {
+    flex: 1 0 auto;
+    padding: 0 0.5em; /* arbitry .5em, need to switch to grid and do column gap */
+    width: 45%;
+    /* So it moves over at the right time, need to change flex, or move to grid to resolve */
+  }
+
+  /* Module Section */
+  .images li {
+    width: 33.333333333%;
+  }
+
+  /* State */
+}
