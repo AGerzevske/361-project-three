@@ -1,25 +1,39 @@
-//<h2 class="nav-h2"><a href="#nav-site">Menu<a/></h2>
+// IIFE
+'use strict';
+(function() {
+  // Does browser support js?
+  if (typeof document.querySelector === 'undefined') {
+    // If no js, then return
+    return;
+  }
+  // If yes js, then continue:
+  console.log('browser supports java');
+  // Check is DOM is loaded before running js
+  document.addEventListener('DOMContentLoaded', function() {
+    var html = document.querySelector('html');
+    var navigation = document.querySelector('.nav-site');
+    var nav_list = document.querySelector('.nav-menu');
+    var nav_heading = document.createElement('h2');
+    var menu_link = document.createElement('a');
+    var menu_button = document.querySelector('#menu-button');
 
-var html = document.querySelector('html');
-html.classList.remove('nojs');
-html.classList.add('js');
+    // var html
+    html.classList.remove('nojs');
+    html.classList.add('js');
 
-var navigation = document.querySelector('.nav-site');
-var nav_list = document.querySelector('.nav-menu')
+    // var navigation, nav_list, nav_heading, menu_link
+    menu_link.textContent = 'Menu';
+    menu_link.setAttribute('id', 'menu-button');
+    menu_link.setAttribute('href', '#null');
 
-var nav_heading = document.createElement('h2');
+    nav_heading.append(menu_link);
 
-var menu_link = document.createElement('a');
-menu_link.textContent = 'Menu';
-menu_link.setAttribute('id','menu-button');
-menu_link.setAttribute('href','#null');
+    navigation.insertBefore(nav_heading, nav_list);
 
-nav_heading.append(menu_link);
-
-navigation.insertBefore(nav_heading,nav_list);
-
-var menu_button = document.querySelector('#menu-button');
-menu_button.addEventListener('click', function(e) {
-  nav_list.classList.toggle('visible');
-  e.preventDefault();
-})
+    // var menu_button
+    menu_button.addEventListener('click', function(e) {
+      nav_list.classList.toggle('visible');
+      e.preventDefault();
+    });
+  });
+}());

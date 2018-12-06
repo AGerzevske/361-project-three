@@ -169,9 +169,6 @@ li ul {
   flex: 1 0 auto;
   order: 2;
   width: 100%;
-}
-
-.nav-site {
   background-color: #DDD;
   display: flex;
   flex-flow: column wrap;
@@ -189,9 +186,9 @@ nav h2 { /* nav-menu li */
   text-align: center;
 }
 
-.nav-item a,
-nav h2 a {
-  margin: 10px;
+nav h2 a ,
+.nav-item a {
+  margin: 0.1em;
   background-color: #348630;
   border-radius: 0.55em; /* Just looks good */
   color: #222;
@@ -223,18 +220,21 @@ nav h2 a {
   text-decoration: underline;
 }
 
-.nav-page-item a:hover {
-  color: blue;
+nav h2 a:active {
+  background-color: #70db70;
 }
 
-.nav-item a:hover,
-nav h2 a:hover {
+nav h2 a:hover,
+.nav-item a:hover {
   background-color: #33cc33;
 }
 
-.nav-item a:active,
-nav h2 a:active {
+.nav-item a:active {
   background-color: #70db70;
+}
+
+.nav-page-item a:hover {
+  color: blue;
 }
 
 .employer {
