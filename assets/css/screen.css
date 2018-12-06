@@ -172,7 +172,7 @@ li ul {
 }
 
 .nav-site {
-  background-color: #348630;
+  background-color: #DDD;
   display: flex;
   flex-flow: column wrap;
   justify-content: flex-start;
@@ -191,6 +191,8 @@ nav h2 { /* nav-menu li */
 
 .nav-item a,
 nav h2 a {
+  margin: 10px;
+  background-color: #348630;
   border-radius: 0.55em; /* Just looks good */
   color: #222;
   display: inherit;
@@ -200,7 +202,15 @@ nav h2 a {
   line-height: 1.629629629em; /* 44  / 27.000 = 1.629629629 */
   padding: 0 0.666666666em; /* 18 / 27 = 0.666666666 */
   text-align: center;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.js .nav-menu {
+  display: none;
+}
+
+.js .nav-menu.visible {
+  display: block;
 }
 
 .nav-page-item {
