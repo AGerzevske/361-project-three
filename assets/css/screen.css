@@ -76,7 +76,7 @@ main {
 }
 
 h1,
-h2,
+main h2,
 h3,
 h4 {
   font-family: "Bai Jamjuree", Roboto, Calibri, Helvetica, sans-serif;
@@ -84,7 +84,7 @@ h4 {
 }
 
 h1,
-h2,
+main h2,
 h3 {
   font-size: 2.25em;  /* 40.500 / 18 = 2.250 */
   line-height: 1.629629629em; /* 66  / 40.500 = 1.629629629 */
@@ -171,7 +171,7 @@ li ul {
   width: 100%;
 }
 
-.nav-menu {
+.nav-site {
   background-color: #348630;
   display: flex;
   flex-flow: column wrap;
@@ -182,12 +182,15 @@ li ul {
   padding: 0;
 }
 
-.nav-item { /* nav-menu li */
+
+.nav-item,
+nav h2 { /* nav-menu li */
   padding: 0;
   text-align: center;
 }
 
-.nav-item a {
+.nav-item a,
+nav h2 a {
   border-radius: 0.55em; /* Just looks good */
   color: #222;
   display: inherit;
@@ -214,11 +217,13 @@ li ul {
   color: blue;
 }
 
-.nav-item a:hover {
+.nav-item a:hover,
+nav h2 a:hover {
   background-color: #33cc33;
 }
 
-.nav-item a:active {
+.nav-item a:active,
+nav h2 a:active {
   background-color: #70db70;
 }
 
