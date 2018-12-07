@@ -292,7 +292,7 @@ nav h2 a:hover,
 /* State (repeat the structure above; media queries, JavaScript-dependent styles) */
 
 /* Change from collum to row when there is room, also happens when name goes from 2 ot 1 line */
-@media screen and (min-width: 414px) {
+@media screen and (min-width: 430px) {
   /* Base Styles */
   /* Layout */
   /* Module Section */
