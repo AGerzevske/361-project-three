@@ -76,7 +76,6 @@ main {
 }
 
 h1,
-main h2,
 h3,
 h4 {
   font-family: "Bai Jamjuree", Roboto, Calibri, Helvetica, sans-serif;
@@ -84,7 +83,6 @@ h4 {
 }
 
 h1,
-main h2,
 h3 {
   font-size: 2.25em;  /* 40.500 / 18 = 2.250 */
   line-height: 1.629629629em; /* 66  / 40.500 = 1.629629629 */
@@ -160,6 +158,13 @@ figcaption {
 
 /* Module/Modular Section (class or descedent selectors; repeating specific styles) */
 
+main h2 {
+  font-family: "Bai Jamjuree", Roboto, Calibri, Helvetica, sans-serif;
+  font-weight: 500;
+  font-size: 2.25em;  /* 40.500 / 18 = 2.250 */
+  line-height: 1.629629629em; /* 66  / 40.500 = 1.629629629 */
+}
+
 li ol,
 li ul {
   padding-left: 1.222222222em; /* 22  / 18.000 = 1.222222222 */
@@ -188,7 +193,6 @@ nav h2 { /* nav-menu li */
 
 nav h2 a ,
 .nav-item a {
-  margin: 0.1em;
   background-color: #348630;
   border-radius: 0.55em; /* Just looks good */
   color: #222;
@@ -197,6 +201,7 @@ nav h2 a ,
   font-size: 1.5em; /* 27.000 / 18 = 1.500 */
   font-weight: 400;
   line-height: 1.629629629em; /* 44  / 27.000 = 1.629629629 */
+  margin: 0.203703703em; /* 1.629629629 / 16 */
   padding: 0 0.666666666em; /* 18 / 27 = 0.666666666 */
   text-align: center;
   text-decoration: none;
@@ -207,7 +212,8 @@ nav h2 a ,
 }
 
 .js .nav-menu.visible {
-  display: block;
+  display: flex;
+  flex-flow: column wrap;
 }
 
 .nav-page-item {
@@ -283,9 +289,17 @@ nav h2 a:hover,
   /* Base Styles */
   /* Layout */
   /* Module Section */
-  .nav-menu {
-    flex-flow: row wrap;
+  .js nav h2 {
+    display: none;
   }
+
+  .js .nav-menu.visible,
+  .js .nav-menu {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+  }
+
 
   /* State */
 }
@@ -299,7 +313,7 @@ nav h2 a:hover,
   }
 
   h1,
-  h2 {
+  main h2 {
     font-size: 3.375em; /* 60.750 / 18 = 3.375 */
     line-height: 1.448559671em; /* 88  / 60.750 = 1.448559671 */
     overflow-wrap: normal;
