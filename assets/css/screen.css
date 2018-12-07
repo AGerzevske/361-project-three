@@ -307,7 +307,6 @@ nav h2 a:hover,
     justify-content: left;
   }
 
-
   /* State */
 }
 
@@ -365,10 +364,11 @@ nav h2 a:hover,
 @media screen and (min-width: 672px) {
   /* Base Styles */
   /* Layout */
+  /* Module Section */
   #homepage p {
     width: 33.33333333em; /* 22  / 18.000 = 1.222222222 */
   }
-  /* Module Section */
+
   /* State */
 }
 
@@ -390,16 +390,64 @@ nav h2 a:hover,
   /* State */
 }
 
-/* Stop text from growing to large to manage */
-/* I may revisit this in the future to allow it to grow more */
-/* Start managing resume text */
 @media screen and (min-width: 1072px) {
   /* Base Styles */
   html {
-    margin: 0 15vw;
+    margin: 0 12.5vw;
   }
 
+  /* Layout */
+  #schools {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: auto;
+  }
 
+  #jobs {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+    grid-template-rows: auto, 1fr, 1fr;
+  }
+
+  #iit {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  #cod {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #bank {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+  }
+
+  #sd129 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  #best-buy {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+
+  #ync {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+
+  #main-event {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+
+  /* Module Section */
+  .images li {
+    width: 33.333333333%;
+  }
 
   #pets figure {
     display: flex;
@@ -410,36 +458,11 @@ nav h2 a:hover,
     margin: auto;
   }
 
-  /* Layout */
-  #schools,
-  #jobs {
-    display: flex;
-    flex-flow: row wrap;
-  }
-
-  #sd129,
-  #best-buy,
-  #ync,
-  #main-event,
-  #iit,
-  #cod {
-    flex: 1 0 auto;
-    padding: 0 0.5em; /* arbitry .5em, need to switch to grid and do column gap */
-    width: 45%;
-    /* So it moves over at the right time, need to change flex, or move to grid to resolve */
-  }
-
-
-
-  /* Module Section */
-  .images li {
-    width: 33.333333333%;
-  }
-
   /* State */
 }
+
 @media screen and (min-width: 1500px) {
   #pets-ul {
-    padding: 0 10%;
+    padding-right: 20%;
   }
 }
