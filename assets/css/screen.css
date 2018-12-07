@@ -399,14 +399,14 @@ nav h2 a:hover,
   /* Layout */
   #schools {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
   }
 
   #jobs {
     display: grid;
-    grid-template-columns: 1fr, 1fr;
-    grid-template-rows: auto, 1fr, 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr 1fr;
   }
 
   #iit {
