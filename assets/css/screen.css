@@ -292,7 +292,7 @@ nav h2 a:hover,
 /* State (repeat the structure above; media queries, JavaScript-dependent styles) */
 
 /* Change from collum to row when there is room, also happens when name goes from 2 ot 1 line */
-@media screen and (min-width: 398px) {
+@media screen and (min-width: 414px) {
   /* Base Styles */
   /* Layout */
   /* Module Section */
@@ -320,6 +320,10 @@ nav h2 a:hover,
     font-size: 3.375em; /* 60.750 / 18 = 3.375 */
     line-height: 1.448559671em; /* 88  / 60.750 = 1.448559671 */
     overflow-wrap: normal;
+  }
+
+  p {
+    line-height: 1.527777777em; /* 1.222222222 X 1.25 */
   }
 
   figcaption {
@@ -361,10 +365,9 @@ nav h2 a:hover,
 @media screen and (min-width: 672px) {
   /* Base Styles */
   /* Layout */
-  #homepage {
-    padding: 1.222222222em 20%; /* 22  / 18.000 = 1.222222222 */
+  #homepage p {
+    width: 33.33333333em; /* 22  / 18.000 = 1.222222222 */
   }
-
   /* Module Section */
   /* State */
 }
@@ -378,6 +381,10 @@ nav h2 a:hover,
     padding: 0 0.197511356em; /* 18 / 91.134 = 0.197511356 */
   }
 
+  figcaption {
+    font-size: 1.5em;   /* 27.000 / 18 = 1.500 */
+    line-height: 1.62962963em;  /* 44  / 27.000 = 1.62962963 */
+  }
   /* Layout */
   /* Module Section */
   /* State */
@@ -389,7 +396,18 @@ nav h2 a:hover,
 @media screen and (min-width: 1072px) {
   /* Base Styles */
   html {
-    width: 57.111111111em; /* (1072 - 44) / 18 = 57.111111111*/
+    margin: 0 15vw;
+  }
+
+
+
+  #pets figure {
+    display: flex;
+    flex-flow: column wrap;
+  }
+
+  #pets figure img {
+    margin: auto;
   }
 
   /* Layout */
@@ -411,10 +429,17 @@ nav h2 a:hover,
     /* So it moves over at the right time, need to change flex, or move to grid to resolve */
   }
 
+
+
   /* Module Section */
   .images li {
     width: 33.333333333%;
   }
 
   /* State */
+}
+@media screen and (min-width: 1500px) {
+  #pets-ul {
+    padding: 0 10%;
+  }
 }
