@@ -59,7 +59,7 @@ html {
 
 header {
   background-color: #A43A3D;
-  border-radius: 0.611111111em 0.611111111em 0 0; /* 1.222222222 / 2 = 0.611111111 */
+  border-radius: 0.55em 0.55em 0 0; /* 0.55em chosen as consistant border-radius */
   display: flex;
   flex-flow: row wrap;
   min-height: 0;
@@ -71,7 +71,7 @@ header {
 
 main {
   background-color: #DDD;
-  border-radius: 0 0 0.611111111em 0.611111111em; /* 1.222222222 / 2 = 0.611111111 */
+  border-radius: 0 0 0.55em 0.55em; /* 1.222222222 / 2 = 0.611111111 */
   padding: 0 1.222222222em; /* 22  / 18.000 = 1.222222222 */
 }
 
@@ -117,6 +117,10 @@ img,
 video {
   display: block;
   max-width: 100%;
+}
+
+img {
+  border-radius: 0.55em;
 }
 
 ol,
@@ -184,6 +188,9 @@ li ul {
   padding: 0;
 }
 
+.nav-menu {
+  padding-top: 0.611111111em;
+}
 
 .nav-item,
 nav h2 { /* nav-menu li */
@@ -201,7 +208,7 @@ nav h2 a ,
   font-size: 1.5em; /* 27.000 / 18 = 1.500 */
   font-weight: 400;
   line-height: 1.629629629em; /* 44  / 27.000 = 1.629629629 */
-  margin: 0.203703703em; /* 1.629629629 / 16 */
+  margin: 0.203703703em; /* 1.629629629 / 8 */
   padding: 0 0.666666666em; /* 18 / 27 = 0.666666666 */
   text-align: center;
   text-decoration: none;
@@ -257,16 +264,16 @@ nav h2 a:hover,
 
 .images {
   background: #222;
+  border-radius: 0.55em;
   overflow: auto;
   padding: 0.277777778em; /* 5 / 18 = 0.277777778 */
 }
 
 .images li {
-  border-radius: 0.611111111em;
+  border-radius: 0.55em;
   box-sizing: border-box;
   padding: 0.277777778em; /* 5 / 18 = 0.277777778 */
 }
-
 
 #resume-address-menu,
 #resume-address-menu li {
@@ -297,7 +304,7 @@ nav h2 a:hover,
   .js .nav-menu {
     display: flex;
     flex-flow: row wrap;
-    justify-content: right;
+    justify-content: left;
   }
 
 
@@ -310,10 +317,6 @@ nav h2 a:hover,
   /* Base Styles */
   h1 {
     padding: 0 0.296296296em; /* 18 / 60.750 = 0.296296296 */
-  }
-
-  h1,
-  main h2 {
     font-size: 3.375em; /* 60.750 / 18 = 3.375 */
     line-height: 1.448559671em; /* 88  / 60.750 = 1.448559671 */
     overflow-wrap: normal;
@@ -335,6 +338,12 @@ nav h2 a:hover,
   }
 
   /* Module Section */
+  main h2 {
+    font-size: 3.375em; /* 60.750 / 18 = 3.375 */
+    line-height: 1.448559671em; /* 88  / 60.750 = 1.448559671 */
+    overflow-wrap: normal;
+  }
+
   .images {
     display: flex;
     flex-flow: row wrap-reverse;
